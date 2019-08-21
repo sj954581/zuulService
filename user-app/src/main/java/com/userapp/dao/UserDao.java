@@ -30,4 +30,7 @@ public interface UserDao extends CrudRepository<User, Integer> {
 	@Query(value = "select * from user u where u.user_id=?1", nativeQuery = true)
 	User getUserbyId5(int id);
 	
+	@Query(value = "select * from user u where u.user_id=?1", nativeQuery = true)
+	User getUserbyId6(int id);
+	
 }
