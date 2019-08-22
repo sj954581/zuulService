@@ -1,0 +1,15 @@
+#============Database Properties===============
+
+spring:
+  application:
+    name: zuulProxyService
+    
+zuul:
+  routes:
+    companyApp:
+      url: http://localhost:8082/org/
+      path: /companyApp/**
+      
+   
+server:
+  port: 8083
