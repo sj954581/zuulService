@@ -14,5 +14,8 @@ public interface BlogUserDao extends CrudRepository<BlogUser, Integer> {
 
 	@Query(value = "select * from blog_user bu where bu.user_id=?1", nativeQuery = true)
 	BlogUserDao getBlogUserbyId(int id);
+	
+	@Query(value = "select * from blog_user bu where bu.user_id=?1", nativeQuery = true)
+	BlogUserDao getBlogUserbyId1(int id);
 }
 
